@@ -24,11 +24,14 @@ jobs:
         with:
           node-version: 22
           cache: "npm"
+          cache-dependency-path: docs/prototypes/package-lock.json
       - run: npm ci
+        working-directory: docs/prototypes
       - run: npm run build
+        working-directory: docs/prototypes
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./docs/prototypes/dist
 
   deploy:
     needs: build
