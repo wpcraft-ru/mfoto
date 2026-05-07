@@ -1,2 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
 @import "tailwindcss";
+
+@theme {
+  --font-display: "Anton", Impact, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "Geist Mono", monospace;
+}
+
 @plugin "daisyui";
+
+/* Design system: override DaisyUI theme tokens */
+:root {
+  --color-primary: oklch(73.23% 0.278 334.32);
+  --color-primary-content: oklch(100% 0 0);
+  --color-base-100: oklch(100% 0 0);
+  --color-base-200: oklch(96.1% 0.003 264.5);
+  --color-base-300: oklch(90% 0.003 264.5);
+  --color-base-content: oklch(14.5% 0.002 286.4);
+  --radius-btn: 0;
+  --radius-box: 0;
+  --radius-badge: 0;
+  --radius-field: 0;
+}
+
+/* Focus visible: pink outline */
+*:focus-visible {
+  outline: 2px solid oklch(73.23% 0.278 334.32);
+  outline-offset: 2px;
+}

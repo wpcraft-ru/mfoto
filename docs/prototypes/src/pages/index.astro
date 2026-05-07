@@ -4,76 +4,582 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout
 	title="Детский фотограф в Новосибирске - съёмка в саду и школе + фотокнига"
-	description="Съёмка в детских садах и школах Новосибирска с организацией под ключ и готовыми фотокнигами."
+	description="Съёмка в детских садах и школах Новосибирска с организацией под ключ: понятные сроки, бережная работа с детьми, аккуратная ретушь и готовые фотокниги для класса или группы."
 >
 	<div class="min-h-screen">
-		<header class="navbar border-b border-base-300 bg-base-100 px-4 md:px-8">
-			<div class="mx-auto flex w-full max-w-6xl items-center justify-between">
-				<a class="text-sm font-semibold tracking-wide">MAX PHOTO BOOK</a>
-				<a class="btn btn-primary btn-sm">Оставить заявку</a>
+
+		<!-- ═══ HEADER ═══ -->
+		<header class="sticky top-0 z-50 border-b border-base-content bg-base-100 px-4 md:px-8">
+			<div class="mx-auto flex h-14 w-full max-w-6xl items-center justify-between">
+				<a href="/" class="font-mono text-sm font-semibold uppercase tracking-widest">MAX PHOTO BOOK</a>
+				<a href="#form" class="btn btn-primary btn-sm">Оставить заявку</a>
 			</div>
 		</header>
 
 		<main>
-			<section class="border-b border-base-300 bg-base-100 px-4 py-16 md:px-8">
-				<div class="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2">
-					<div class="space-y-5">
-						<p class="font-mono text-xs uppercase tracking-wider text-base-content/60">[NOVOSIBIRSK / SCHOOL + KINDERGARTEN]</p>
-						<h1 class="text-4xl font-bold leading-tight md:text-6xl">Детский фотограф в Новосибирске - съёмка в саду и школе + фотокнига</h1>
-						<p class="text-base text-base-content/80 md:text-lg">Снимаю бережно и организую всё под ключ: от согласования с учреждением до готовой фотокниги для родителей и детей.</p>
-						<div class="flex flex-wrap gap-3">
-							<button class="btn btn-primary">Оставить заявку на съёмку</button>
-							<button class="btn btn-outline">Посмотреть примеры фотокниг</button>
+
+			<!-- ═══ 1. HERO ═══ (white) -->
+			<section class="border-b border-base-content bg-base-100 px-4 py-16 md:px-8 md:py-24">
+				<div class="mx-auto max-w-6xl">
+					<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-4">
+						[NOVOSIBIRSK / SCHOOL + KINDERGARTEN]
+					</p>
+					<div class="grid gap-10 lg:grid-cols-2 lg:gap-16">
+						<div class="space-y-6">
+							<h1 class="font-display text-5xl leading-[0.95] md:text-7xl">
+								Детский фотограф в Новосибирске — съёмка в саду и школе + фотокнига
+							</h1>
+							<p class="text-base-content/70 text-lg leading-relaxed">
+								Снимаю бережно и организую всё под ключ: от согласования с учреждением до готовой фотокниги для родителей и детей.
+							</p>
+							<p class="font-mono text-xs uppercase tracking-widest text-base-content/50">
+								[PHOTO DAY → BOOK DELIVERY]
+							</p>
+							<div class="flex flex-wrap gap-3 pt-2">
+								<a href="#form" class="btn btn-primary">Оставить заявку на съёмку</a>
+								<a href="#photobook" class="btn btn-outline border-base-content">Посмотреть примеры фотокниг</a>
+							</div>
 						</div>
-					</div>
-					<div class="card border border-base-300 bg-base-200">
-						<div class="card-body">
-							<h2 class="card-title">Что вы получаете</h2>
-							<ul class="list-disc space-y-2 pl-5 text-sm md:text-base">
-								<li>Портреты, репортаж и общее фото в одном процессе</li>
-								<li>Фотокнига как главный итог съёмки</li>
-								<li>Прозрачные сроки и понятная коммуникация</li>
+						<div class="border border-base-content bg-base-200 p-6 md:p-8">
+							<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-4">ЧТО ВЫ ПОЛУЧАЕТЕ</p>
+							<ul class="space-y-3">
+								<li class="flex gap-3">
+									<span class="text-primary font-bold mt-0.5">—</span>
+									<span>Портреты, репортаж и общее фото в одном процессе</span>
+								</li>
+								<li class="flex gap-3">
+									<span class="text-primary font-bold mt-0.5">—</span>
+									<span>Фотокнига как главный итог съёмки</span>
+								</li>
+								<li class="flex gap-3">
+									<span class="text-primary font-bold mt-0.5">—</span>
+									<span>Прозрачные сроки и понятная коммуникация</span>
+								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="bg-base-200 px-4 py-16 md:px-8">
-				<div class="mx-auto max-w-6xl space-y-6">
-					<h2 class="text-3xl font-bold md:text-4xl">Для кого</h2>
+			<!-- ═══ 2. ДЛЯ КОГО ═══ (gray) -->
+			<section class="border-b border-base-content bg-base-200 px-4 py-16 md:px-8 md:py-20">
+				<div class="mx-auto max-w-6xl space-y-8">
+					<div>
+						<h2 class="font-display text-4xl leading-[0.95] md:text-5xl">Для кого</h2>
+						<p class="mt-3 text-base-content/70">
+							Процесс выстроен так, чтобы взрослым было спокойно, а детям — комфортно.
+						</p>
+					</div>
 					<div class="grid gap-4 md:grid-cols-3">
-						<article class="card border border-base-300 bg-base-100">
-							<div class="card-body">
-								<h3 class="card-title text-xl">Родителям</h3>
-								<p>Память на годы и понятный результат без организационного стресса.</p>
-							</div>
+						<article class="border border-base-content bg-base-100 p-6">
+							<h3 class="font-display text-2xl mb-3">Родителям</h3>
+							<p class="text-base-content/70 text-sm leading-relaxed">
+								Память на годы и понятный результат без организационного стресса. Видите, что входит в пакет и сколько это стоит.
+							</p>
 						</article>
-						<article class="card border border-base-300 bg-base-100">
-							<div class="card-body">
-								<h3 class="card-title text-xl">Классным и воспитателям</h3>
-								<p>Съёмка без срыва учебного и дневного режима.</p>
-							</div>
+						<article class="border border-base-content bg-base-100 p-6">
+							<h3 class="font-display text-2xl mb-3">Классным и воспитателям</h3>
+							<p class="text-base-content/70 text-sm leading-relaxed">
+								Съёмка без срыва учебного и дневного режима. Тайминг согласовываем заранее — никаких сюрпризов.
+							</p>
 						</article>
-						<article class="card border border-base-300 bg-base-100">
-							<div class="card-body">
-								<h3 class="card-title text-xl">Администрации</h3>
-								<p>Прозрачные согласования, конфиденциальность и чёткие сроки.</p>
+						<article class="border border-base-content bg-base-100 p-6">
+							<h3 class="font-display text-2xl mb-3">Администрации</h3>
+							<p class="text-base-content/70 text-sm leading-relaxed">
+								Прозрачные согласования, конфиденциальность данных и чёткие сроки. Работаем с согласиями родителей.
+							</p>
+						</article>
+					</div>
+					<div>
+						<a href="#form" class="btn btn-primary">Обсудить формат для нашей группы/класса</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ═══ 3. ФОТОКНИГА КАК ПРОДУКТ ═══ (white) -->
+			<section id="photobook" class="border-b border-base-content bg-base-100 px-4 py-16 md:px-8 md:py-20">
+				<div class="mx-auto max-w-6xl space-y-8">
+					<div>
+						<h2 class="font-display text-4xl leading-[0.95] md:text-5xl">Фотокнига как продукт</h2>
+						<p class="mt-3 max-w-2xl text-base-content/70">
+							Не просто набор фото, а цельный альбом с продуманной логикой разворотов. Дизайн, ретушь, печать — всё включено.
+						</p>
+					</div>
+					<div class="grid gap-4 md:grid-cols-3">
+						<div class="border border-base-content bg-base-200 p-5">
+							<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2">ОБЪЁМ</p>
+							<p class="font-display text-3xl">24–40</p>
+							<p class="text-sm text-base-content/70 mt-1">страниц в альбоме</p>
+						</div>
+						<div class="border border-base-content bg-base-200 p-5">
+							<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2">СРОК МАКЕТА</p>
+							<p class="font-display text-3xl">7–14</p>
+							<p class="text-sm text-base-content/70 mt-1">дней после съёмки</p>
+						</div>
+						<div class="border border-base-content bg-base-200 p-5">
+							<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2">КООРДИНАЦИЯ</p>
+							<p class="font-display text-3xl">1</p>
+							<p class="text-sm text-base-content/70 mt-1">контактное лицо для взрослых</p>
+						</div>
+					</div>
+					<div>
+						<a href="#form" class="btn btn-primary">Запросить пример разворотов</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ═══ 4. КАКИЕ ФОТО ═══ (gray) -->
+			<section class="border-b border-base-content bg-base-200 px-4 py-16 md:px-8 md:py-20">
+				<div class="mx-auto max-w-6xl space-y-8">
+					<div>
+						<h2 class="font-display text-4xl leading-[0.95] md:text-5xl">Какие фото вы получите</h2>
+					</div>
+					<div class="grid gap-4 md:grid-cols-3">
+						<article class="border border-base-content bg-base-100 p-6">
+							<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-3">01 / PORTRAIT</p>
+							<h3 class="font-display text-2xl mb-3">Портреты</h3>
+							<p class="text-base-content/70 text-sm leading-relaxed">
+								Индивидуальные и парные. Спокойная обстановка, аккуратная ретушь, никаких «натянутых» улыбок.
+							</p>
+						</article>
+						<article class="border border-base-content bg-base-100 p-6">
+							<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-3">02 / REPORTAGE</p>
+							<h3 class="font-display text-2xl mb-3">Репортаж</h3>
+							<p class="text-base-content/70 text-sm leading-relaxed">
+								Живые моменты занятий, игр и общения. То, что происходит между постановочными кадрами.
+							</p>
+						</article>
+						<article class="border border-base-content bg-base-100 p-6">
+							<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-3">03 / GROUP</p>
+							<h3 class="font-display text-2xl mb-3">Общее фото</h3>
+							<p class="text-base-content/70 text-sm leading-relaxed">
+								Классические групповые кадры всего класса или группы. Организую расстановку сам.
+							</p>
+						</article>
+					</div>
+					<div>
+						<a href="#form" class="btn btn-primary">Подобрать оптимальный набор под возраст детей</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ═══ 5. ПРОЦЕСС ═══ (white) -->
+			<section class="border-b border-base-content bg-base-100 px-4 py-16 md:px-8 md:py-20">
+				<div class="mx-auto max-w-6xl space-y-8">
+					<div>
+						<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2">[WORKFLOW / CLEAR DEADLINES]</p>
+						<h2 class="font-display text-4xl leading-[0.95] md:text-5xl">Как проходит съёмка</h2>
+					</div>
+					<ol class="space-y-3">
+						<li class="grid grid-cols-[3rem_1fr] gap-4 border border-base-content bg-base-200 p-5">
+							<span class="font-mono text-xs text-base-content/50 pt-1">01</span>
+							<div>
+								<p class="font-semibold">Бриф и согласование формата</p>
+								<p class="text-sm text-base-content/70 mt-1">Обсуждаем количество детей, учреждение, пожелания по стилю и результату.</p>
 							</div>
+						</li>
+						<li class="grid grid-cols-[3rem_1fr] gap-4 border border-base-content bg-base-200 p-5">
+							<span class="font-mono text-xs text-base-content/50 pt-1">02</span>
+							<div>
+								<p class="font-semibold">Тайминг и подготовка учреждения</p>
+								<p class="text-sm text-base-content/70 mt-1">Согласовываем расписание с администрацией, чтобы съёмка не нарушила режим дня.</p>
+							</div>
+						</li>
+						<li class="grid grid-cols-[3rem_1fr] gap-4 border border-base-content bg-base-200 p-5">
+							<span class="font-mono text-xs text-base-content/50 pt-1">03</span>
+							<div>
+								<p class="font-semibold">Съёмочный день</p>
+								<p class="text-sm text-base-content/70 mt-1">Работаю спокойно, без давления. Дети не стоят по стойке смирно — мы их не торопим.</p>
+							</div>
+						</li>
+						<li class="grid grid-cols-[3rem_1fr] gap-4 border border-base-content bg-base-200 p-5">
+							<span class="font-mono text-xs text-base-content/50 pt-1">04</span>
+							<div>
+								<p class="font-semibold">Отбор, ретушь, макет фотокниги</p>
+								<p class="text-sm text-base-content/70 mt-1">7–14 дней: отбираю лучшие кадры, делаю ретушь и собираю макет разворотов.</p>
+							</div>
+						</li>
+						<li class="grid grid-cols-[3rem_1fr] gap-4 border border-base-content bg-base-200 p-5">
+							<span class="font-mono text-xs text-base-content/50 pt-1">05</span>
+							<div>
+								<p class="font-semibold">Печать и выдача</p>
+								<p class="text-sm text-base-content/70 mt-1">Печать в профессиональной типографии. Выдача через координатора в учреждении.</p>
+							</div>
+						</li>
+					</ol>
+					<div>
+						<a href="#form" class="btn btn-primary">Получить план съёмочного дня</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ═══ 6. БЕЗОПАСНОСТЬ ═══ (gray) -->
+			<section class="border-b border-base-content bg-base-200 px-4 py-16 md:px-8 md:py-20">
+				<div class="mx-auto max-w-6xl space-y-8">
+					<div>
+						<h2 class="font-display text-4xl leading-[0.95] md:text-5xl">Безопасность и согласия</h2>
+						<p class="mt-3 max-w-2xl text-base-content/70">
+							Конфиденциальность детей — не опция, а основа работы.
+						</p>
+					</div>
+					<ul class="grid gap-4 md:grid-cols-2">
+						<li class="border border-base-content bg-base-100 p-5 flex gap-4">
+							<span class="text-primary font-bold text-lg mt-0.5">—</span>
+							<span>Съёмка только по согласованию с учреждением и при наличии согласий родителей</span>
+						</li>
+						<li class="border border-base-content bg-base-100 p-5 flex gap-4">
+							<span class="text-primary font-bold text-lg mt-0.5">—</span>
+							<span>Фото детей не публикуются в соцсетях и на сайте без явного разрешения родителей</span>
+						</li>
+						<li class="border border-base-content bg-base-100 p-5 flex gap-4">
+							<span class="text-primary font-bold text-lg mt-0.5">—</span>
+							<span>Ограничения по конкретным детям или локациям фиксируем заранее и строго соблюдаем</span>
+						</li>
+						<li class="border border-base-content bg-base-100 p-5 flex gap-4">
+							<span class="text-primary font-bold text-lg mt-0.5">—</span>
+							<span>Условия, сроки и порядок выдачи прозрачны и фиксируются письменно</span>
+						</li>
+					</ul>
+					<div>
+						<a href="#form" class="btn btn-primary">Запросить шаблон сообщения для родительского чата</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ═══ 7. ПАКЕТЫ ═══ (white) -->
+			<section class="border-b border-base-content bg-base-100 px-4 py-16 md:px-8 md:py-20">
+				<div class="mx-auto max-w-6xl space-y-8">
+					<div>
+						<h2 class="font-display text-4xl leading-[0.95] md:text-5xl">Пакеты</h2>
+						<p class="mt-3 text-base-content/70">
+							Цена рассчитывается индивидуально — напишите, и я подберу оптимальный вариант.
+						</p>
+					</div>
+					<div class="grid gap-4 md:grid-cols-3">
+						<!-- Сад -->
+						<article class="border border-base-content p-6 flex flex-col gap-4">
+							<div>
+								<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2">ДЛЯ ДЕТСКИХ САДОВ</p>
+								<h3 class="font-display text-3xl">Сад</h3>
+							</div>
+							<ul class="space-y-2 text-sm text-base-content/70 flex-1">
+								<li class="flex gap-2"><span class="text-primary">—</span>Индивидуальные портреты</li>
+								<li class="flex gap-2"><span class="text-primary">—</span>Общее фото группы</li>
+								<li class="flex gap-2"><span class="text-primary">—</span>Базовая фотокнига группы</li>
+								<li class="flex gap-2"><span class="text-primary">—</span>Аккуратная ретушь</li>
+							</ul>
+							<a href="#form" class="btn btn-primary btn-sm w-full">Рассчитать пакет</a>
+						</article>
+						<!-- Школа -->
+						<article class="border-2 border-primary p-6 flex flex-col gap-4 relative">
+							<div class="absolute -top-3 left-5">
+								<span class="bg-primary px-3 py-1 font-mono text-xs text-white uppercase tracking-widest">Популярный</span>
+							</div>
+							<div>
+								<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2">ДЛЯ ШКОЛ И КЛАССОВ</p>
+								<h3 class="font-display text-3xl">Школа</h3>
+							</div>
+							<ul class="space-y-2 text-sm text-base-content/70 flex-1">
+								<li class="flex gap-2"><span class="text-primary">—</span>Индивидуальные портреты</li>
+								<li class="flex gap-2"><span class="text-primary">—</span>Общее фото класса</li>
+								<li class="flex gap-2"><span class="text-primary">—</span>Расширенный макет фотокниги</li>
+								<li class="flex gap-2"><span class="text-primary">—</span>Репортажные кадры урока</li>
+								<li class="flex gap-2"><span class="text-primary">—</span>Аккуратная ретушь</li>
+							</ul>
+							<a href="#form" class="btn btn-primary btn-sm w-full">Рассчитать пакет</a>
+						</article>
+						<!-- Премиум -->
+						<article class="border border-base-content p-6 flex flex-col gap-4">
+							<div>
+								<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2">МАКСИМАЛЬНЫЙ ОХВАТ</p>
+								<h3 class="font-display text-3xl">Премиум</h3>
+							</div>
+							<ul class="space-y-2 text-sm text-base-content/70 flex-1">
+								<li class="flex gap-2"><span class="text-primary">—</span>Всё из пакета «Школа»</li>
+								<li class="flex gap-2"><span class="text-primary">—</span>Больше вариативности кадров</li>
+								<li class="flex gap-2"><span class="text-primary">—</span>Приоритет по срокам</li>
+								<li class="flex gap-2"><span class="text-primary">—</span>Дополнительные варианты обложки</li>
+							</ul>
+							<a href="#form" class="btn btn-primary btn-sm w-full">Рассчитать пакет</a>
 						</article>
 					</div>
 				</div>
 			</section>
 
-			<section class="bg-base-100 px-4 py-16 md:px-8">
-				<div class="mx-auto max-w-6xl space-y-6">
-					<h2 class="text-3xl font-bold md:text-4xl">Следующий шаг</h2>
-					<p class="max-w-3xl text-base-content/80">Это базовый каркас лендинга на AstroJS + DaisyUI. Дальше заполняем остальные блоки RFC: фотокнига, процесс, безопасность, пакеты, отзывы, FAQ и форма.</p>
-					<div class="alert border border-base-300 bg-base-200 text-sm">
-						<span>Production-цель: тот же Astro-стек с деплоем на GitHub Pages.</span>
+			<!-- ═══ 8. ДОВЕРИЕ ═══ (white) -->
+			<section class="border-b border-base-content bg-base-100 px-4 py-16 md:px-8 md:py-20">
+				<div class="mx-auto max-w-6xl space-y-10">
+					<div>
+						<h2 class="font-display text-4xl leading-[0.95] md:text-5xl">Отзывы и цифры</h2>
+					</div>
+					<!-- Stats row -->
+					<div class="grid gap-4 md:grid-cols-3">
+						<div class="border border-base-content bg-base-200 p-5 text-center">
+							<p class="font-display text-5xl">80+</p>
+							<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mt-2">семей получили фотокниги</p>
+						</div>
+						<div class="border border-base-content bg-base-200 p-5 text-center">
+							<p class="font-display text-5xl">4.9</p>
+							<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mt-2">средняя оценка / 5</p>
+						</div>
+						<div class="border border-base-content bg-base-200 p-5 text-center">
+							<p class="font-display text-5xl">2–3</p>
+							<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mt-2">недели от съёмки до выдачи</p>
+						</div>
+					</div>
+					<!-- Reviews -->
+					<div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+						<blockquote class="border border-base-content p-5 space-y-3">
+							<p class="text-sm leading-relaxed text-base-content/80">«Фотокнига получилась такой тёплой и живой. Дети сами просят её рассматривать снова и снова.»</p>
+							<footer class="font-mono text-xs text-base-content/50 uppercase tracking-wide">— Мама выпускника, 4 класс</footer>
+						</blockquote>
+						<blockquote class="border border-base-content p-5 space-y-3">
+							<p class="text-sm leading-relaxed text-base-content/80">«Максим сам организовал весь процесс: договорился с директором, составил расписание. Мне оставалось только ждать результат.»</p>
+							<footer class="font-mono text-xs text-base-content/50 uppercase tracking-wide">— Классный руководитель, 9 класс</footer>
+						</blockquote>
+						<blockquote class="border border-base-content p-5 space-y-3">
+							<p class="text-sm leading-relaxed text-base-content/80">«Ребята совсем не стеснялись. Фотограф нашёл подход к каждому — даже самые тихони улыбались.»</p>
+							<footer class="font-mono text-xs text-base-content/50 uppercase tracking-wide">— Воспитатель подготовительной группы</footer>
+						</blockquote>
+						<blockquote class="border border-base-content p-5 space-y-3">
+							<p class="text-sm leading-relaxed text-base-content/80">«Цены понятные, никаких доплат в процессе. Всё как договорились.»</p>
+							<footer class="font-mono text-xs text-base-content/50 uppercase tracking-wide">— Мама, детский сад №47</footer>
+						</blockquote>
+						<blockquote class="border border-base-content p-5 space-y-3">
+							<p class="text-sm leading-relaxed text-base-content/80">«Фотокнига стала лучшим подарком на выпускной. Учительница плакала.»</p>
+							<footer class="font-mono text-xs text-base-content/50 uppercase tracking-wide">— Родительский комитет, 11 класс</footer>
+						</blockquote>
+						<blockquote class="border border-base-content p-5 space-y-3">
+							<p class="text-sm leading-relaxed text-base-content/80">«Администрация была довольна: всё согласовано, дети не пропустили занятий, качество отличное.»</p>
+							<footer class="font-mono text-xs text-base-content/50 uppercase tracking-wide">— Заместитель директора по УВР</footer>
+						</blockquote>
+					</div>
+					<div>
+						<a href="#form" class="btn btn-primary">Запросить портфолио и отзывы</a>
 					</div>
 				</div>
 			</section>
+
+			<!-- ═══ 9. FAQ ═══ (gray) -->
+			<section class="border-b border-base-content bg-base-200 px-4 py-16 md:px-8 md:py-20">
+				<div class="mx-auto max-w-6xl space-y-8">
+					<div>
+						<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2">[FAQ]</p>
+						<h2 class="font-display text-4xl leading-[0.95] md:text-5xl">Часто спрашивают</h2>
+					</div>
+					<div class="space-y-2">
+						{[
+							{
+								q: "Нужны ли согласия родителей?",
+								a: "Да. Перед съёмкой я предоставляю шаблон согласия на фотосъёмку, который классный руководитель или воспитатель передаёт родителям. Съёмка начинается только после получения всех согласий."
+							},
+							{
+								q: "Публикуются ли фото детей?",
+								a: "Нет. По умолчанию фото детей не используются для портфолио, сайта или соцсетей. Если родители хотят поделиться результатом — это только их решение."
+							},
+							{
+								q: "Сколько длится съёмочный день?",
+								a: "Зависит от количества детей. Обычно 1–3 часа. Планируем так, чтобы не нарушить расписание занятий или дневной сон."
+							},
+							{
+								q: "Что если ребёнок стесняется?",
+								a: "Работаю спокойно: не тороплю, не требую улыбаться. Большинство детей раскрываются через 5–10 минут. Если ребёнок категорически не хочет сниматься — не снимаю."
+							},
+							{
+								q: "Что нужно подготовить заранее?",
+								a: "Список детей, согласия родителей и выбранный тип пакета. Место для съёмки подбираем вместе с воспитателем или классным."
+							},
+							{
+								q: "Где проходит съёмка?",
+								a: "На территории учреждения: в классе, в зале, на улице рядом со школой/садом. Выезд в студию не нужен."
+							},
+							{
+								q: "Можно ли фото с учителем/воспитателем?",
+								a: "Да, если учитель или воспитатель не против. Это красивые кадры, которые часто попадают на разворот фотокниги."
+							},
+							{
+								q: "Как происходит оплата?",
+								a: "После согласования пакета — предоплата 50%. Остаток — после получения макета фотокниги. Принимаю перевод на карту или наличные."
+							},
+							{
+								q: "Сроки готовности фотокниг?",
+								a: "7–14 дней на макет + 7–14 дней печать в типографии. Итого 2–4 недели от съёмочного дня до выдачи."
+							},
+							{
+								q: "Можно ли выбрать фото в книгу самостоятельно?",
+								a: "В базовых пакетах — финальный выбор кадров за мной. В пакете Премиум — отправляю галерею и можно согласовать."
+							},
+							{
+								q: "Что если кто-то не хочет сниматься?",
+								a: "Ребёнка не включаем в съёмку и не вставляем в фотокнигу. Это нормально и заранее учитывается в процессе."
+							},
+							{
+								q: "Можно ли учесть особенности ребёнка?",
+								a: "Да. Если ребёнок требует особого подхода — скажите заранее. Работаю внимательно и готов адаптировать процесс."
+							}
+						].map(({ q, a }) => (
+							<details class="border border-base-content bg-base-100 group">
+								<summary class="flex cursor-pointer items-center justify-between p-5 font-semibold select-none hover:bg-base-200 transition-colors duration-150">
+									<span>{q}</span>
+									<span class="font-mono text-primary ml-4 transition-transform duration-200 group-open:rotate-45">+</span>
+								</summary>
+								<div class="px-5 pb-5 pt-2 text-sm text-base-content/70 leading-relaxed">
+									{a}
+								</div>
+							</details>
+						))}
+					</div>
+					<div>
+						<a href="#form" class="btn btn-primary">Задать вопрос в мессенджере</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- ═══ 10. ФОРМА И КОНТАКТЫ ═══ (white) -->
+			<section id="form" class="border-b border-base-content bg-base-100 px-4 py-16 md:px-8 md:py-20">
+				<div class="mx-auto max-w-6xl">
+					<div class="grid gap-12 lg:grid-cols-2">
+						<div class="space-y-4">
+							<p class="font-mono text-xs uppercase tracking-widest text-base-content/50">[ЗАЯВКА]</p>
+							<h2 class="font-display text-4xl leading-[0.95] md:text-5xl">Оставить заявку</h2>
+							<p class="text-base-content/70 leading-relaxed">
+								Расскажите о вашем учреждении и пожеланиях — отвечу в течение дня и предложу оптимальный вариант.
+							</p>
+							<div class="space-y-2 pt-4">
+								<p class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-3">СВЯЗАТЬСЯ НАПРЯМУЮ</p>
+								<a href="https://wa.me/79999999999" class="flex items-center gap-3 border border-base-content px-4 py-3 text-sm font-semibold hover:bg-base-200 transition-colors duration-150">
+									<span>WhatsApp</span>
+									<span class="font-mono text-xs text-base-content/50 ml-auto">→</span>
+								</a>
+								<a href="https://t.me/maxphotobook" class="flex items-center gap-3 border border-base-content px-4 py-3 text-sm font-semibold hover:bg-base-200 transition-colors duration-150">
+									<span>Telegram</span>
+									<span class="font-mono text-xs text-base-content/50 ml-auto">→</span>
+								</a>
+							</div>
+						</div>
+						<form class="space-y-4" novalidate>
+							<!-- Role -->
+							<fieldset>
+								<legend class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2">Я — *</legend>
+								<div class="grid grid-cols-2 gap-2">
+									{["Родитель", "Воспитатель", "Классный руководитель", "Администрация"].map(role => (
+										<label class="flex cursor-pointer items-center gap-2 border border-base-content px-3 py-2 text-sm hover:bg-base-200 transition-colors duration-150 has-[:checked]:bg-primary has-[:checked]:text-white has-[:checked]:border-primary">
+											<input type="radio" name="role" value={role} class="sr-only" required />
+											{role}
+										</label>
+									))}
+								</div>
+							</fieldset>
+
+							<!-- Institution -->
+							<div>
+								<label for="institution" class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2 block">Учреждение и район *</label>
+								<input
+									id="institution"
+									name="institution"
+									type="text"
+									placeholder="Школа №42, Октябрьский район"
+									required
+									class="w-full border border-base-content bg-base-100 px-4 py-3 text-sm placeholder:text-base-content/40 focus:outline-none focus:ring-2 focus:ring-primary"
+								/>
+							</div>
+
+							<!-- Group / class -->
+							<div class="grid gap-4 sm:grid-cols-2">
+								<div>
+									<label for="group" class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2 block">Группа / класс</label>
+									<input
+										id="group"
+										name="group"
+										type="text"
+										placeholder="4 «А»"
+										class="w-full border border-base-content bg-base-100 px-4 py-3 text-sm placeholder:text-base-content/40 focus:outline-none focus:ring-2 focus:ring-primary"
+									/>
+								</div>
+								<div>
+									<label for="children-count" class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2 block">Кол-во детей</label>
+									<input
+										id="children-count"
+										name="children_count"
+										type="number"
+										min="1"
+										placeholder="25"
+										class="w-full border border-base-content bg-base-100 px-4 py-3 text-sm placeholder:text-base-content/40 focus:outline-none focus:ring-2 focus:ring-primary"
+									/>
+								</div>
+							</div>
+
+							<!-- Dates -->
+							<div>
+								<label for="dates" class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2 block">Желаемые даты</label>
+								<input
+									id="dates"
+									name="dates"
+									type="text"
+									placeholder="Сентябрь–октябрь 2026"
+									class="w-full border border-base-content bg-base-100 px-4 py-3 text-sm placeholder:text-base-content/40 focus:outline-none focus:ring-2 focus:ring-primary"
+								/>
+							</div>
+
+							<!-- What needed -->
+							<fieldset>
+								<legend class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2">Что нужно *</legend>
+								<div class="grid gap-2 sm:grid-cols-2">
+									{["Фото + фотокнига", "Только фотокнига", "Только фото", "Ещё не знаю"].map(opt => (
+										<label class="flex cursor-pointer items-center gap-2 border border-base-content px-3 py-2 text-sm hover:bg-base-200 transition-colors duration-150 has-[:checked]:bg-primary has-[:checked]:text-white has-[:checked]:border-primary">
+											<input type="checkbox" name="needs" value={opt} class="sr-only" />
+											{opt}
+										</label>
+									))}
+								</div>
+							</fieldset>
+
+							<!-- Contact -->
+							<div>
+								<label for="contact" class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2 block">WhatsApp / Telegram / телефон *</label>
+								<input
+									id="contact"
+									name="contact"
+									type="text"
+									placeholder="+7 900 000-00-00 или @username"
+									required
+									class="w-full border border-base-content bg-base-100 px-4 py-3 text-sm placeholder:text-base-content/40 focus:outline-none focus:ring-2 focus:ring-primary"
+								/>
+							</div>
+
+							<!-- Comment -->
+							<div>
+								<label for="comment" class="font-mono text-xs uppercase tracking-widest text-base-content/50 mb-2 block">Комментарий</label>
+								<textarea
+									id="comment"
+									name="comment"
+									rows={3}
+									placeholder="Любые пожелания или вопросы"
+									class="w-full border border-base-content bg-base-100 px-4 py-3 text-sm placeholder:text-base-content/40 focus:outline-none focus:ring-2 focus:ring-primary resize-none"
+								></textarea>
+							</div>
+
+							<!-- Consent -->
+							<p class="text-xs text-base-content/50 leading-relaxed">
+								Отправляя форму, вы соглашаетесь на обработку контактных данных для связи по заявке.
+							</p>
+
+							<!-- Submit -->
+							<button type="submit" class="btn btn-primary w-full">Отправить заявку</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
 		</main>
+
+		<!-- ═══ FOOTER ═══ -->
+		<footer class="border-t border-base-content bg-base-100 px-4 py-8 md:px-8">
+			<div class="mx-auto flex max-w-6xl flex-col items-start gap-3 md:flex-row md:items-center md:justify-between">
+				<span class="font-mono text-xs uppercase tracking-widest text-base-content/50">MAX PHOTO BOOK</span>
+				<span class="font-mono text-xs text-base-content/40">Новосибирск — школы и детские сады</span>
+			</div>
+		</footer>
+
 	</div>
 </Layout>

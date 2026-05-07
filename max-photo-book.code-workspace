@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": "./docs/prototypes"
+		},
+		{
 			"path": "."
 		}
 	],
