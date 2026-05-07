@@ -18,9 +18,9 @@
 
 ## Overview
 
-- **Стиль:** Clean, warm, photo-first с техническими акцентами
-- **Настроение:** Доверительный, профессиональный, уютный
-- **Вдохновение:** Минималистичные портфолио-сайты фотографов + техническая эстетика (mono-шрифты, метки-данные)
+- **Стиль:** Café-inspired — тёплые тона, мягкая типографика, чистые layout-ы
+- **Настроение:** Доверительный, уютный, профессиональный
+- **Вдохновение:** Уютные café-интерфейсы + тёплая семейная эстетика (Cafe Design System by typeui.sh)
 - **Для кого:** смотри MARKETING.md — целевая аудитория
 
 ## Design Tokens
@@ -29,68 +29,66 @@
 
 ```yaml
 colors:
-  primary: "#FF4FB6"        # розовый акцент (CTA, выделения)
-  primary-hover: "#E8449E"  # hover primary
-  accent: "#1A1A1A"         # основной тёмный (заголовки, текст)
-  background: "#FFFFFF"     # основной фон
-  surface: "#F3F4F6"        # карточки и секции-фон (gray-100)
-  text-primary: "#1A1A1A"   # заголовки
-  text-secondary: "#4B5563" # тело текста, описания (gray-600)
-  text-tertiary: "#9CA3AF"  # подсказки, meta, muted (gray-400)
-  border: "#1A1A1A"         # основной бордер (чёрный 1px)
-  border-light: "#E5E7EB"   # лёгкий бордер (gray-200)
+  primary: "#5D4432"        # тёплый коричневый — основной акцент (CTA, выделения)
+  primary-hover: "#4A3628"  # hover primary
+  secondary: "#E9E3DD"      # тёплый бежевый — вторичный акцент
+  success: "#16A34A"
+  warning: "#D97706"
+  danger: "#DC2626"
+  background: "#F9F7F5"     # тёплый off-white — основной фон
+  surface: "#E9E3DD"        # бежевый — фон карточек и альтернативных секций
+  text-primary: "#3E2B1E"   # тёмно-коричневый — заголовки
+  text-secondary: "#5D4432" # средний коричневый — тело текста
+  text-tertiary: "#9A8474"  # мягкий коричневый — meta, muted
+  border: "#5D4432"         # тёплый коричневый бордер 1px
+  border-light: "#D4CAC2"   # светлый тёплый бордер
   cta-text: "#FFFFFF"       # текст на CTA-кнопках
-  # Тёплая палитра (для «семейного» направления)
-  warm-bg: "#FFF7F2"        # кремовый фон
-  warm-accent: "#EA580C"    # оранжевый акцент
-  warm-heading: "#7C2D12"   # тёмно-коричневый заголовок
-  warm-text: "#9A3412"      # коричневый текст
 ```
 
 ### Typography
 
 ```yaml
 typography:
-  font-heading: "Anton, Impact, sans-serif"
-  font-body: "Inter, system-ui, sans-serif"
-  font-mono: "IBM Plex Mono, Geist Mono, monospace"
-  font-data: "Geist Mono, monospace"
+  font-heading: "Poppins, sans-serif"
+  font-body: "Poppins, sans-serif"
+  font-mono: "JetBrains Mono, monospace"
+  font-data: "JetBrains Mono, monospace"
 
   h1:
     fontFamily: "{typography.font-heading}"
     fontSize: "64px"
-    fontWeight: 400
-    lineHeight: 0.95
+    fontWeight: 700
+    lineHeight: 1.05
 
   h2:
     fontFamily: "{typography.font-heading}"
     fontSize: "44px"
-    fontWeight: 400
-    lineHeight: 0.95
+    fontWeight: 700
+    lineHeight: 1.1
 
   h3:
     fontFamily: "{typography.font-heading}"
     fontSize: "28px"
-    fontWeight: 400
-    lineHeight: 1.0
+    fontWeight: 600
+    lineHeight: 1.2
 
   body:
     fontFamily: "{typography.font-body}"
     fontSize: "16px"
     fontWeight: 400
-    lineHeight: 1.45
+    lineHeight: 1.6
 
   body-lg:
     fontFamily: "{typography.font-body}"
     fontSize: "18px"
     fontWeight: 400
-    lineHeight: 1.4
+    lineHeight: 1.55
 
   small:
     fontFamily: "{typography.font-body}"
     fontSize: "15px"
     fontWeight: 400
-    lineHeight: 1.35
+    lineHeight: 1.5
 
   meta:
     fontFamily: "{typography.font-mono}"
@@ -116,23 +114,21 @@ typography:
     fontFamily: "{typography.font-body}"
     fontSize: "20px"
     fontWeight: 600
-    lineHeight: 1.0
+    lineHeight: 1.2
 ```
 
 ### Spacing
 
 ```yaml
 spacing:
+  2xs: "2px"
   xs: "4px"
   sm: "8px"
   md: "12px"
   lg: "16px"
-  xl: "20px"
-  2xl: "24px"
-  3xl: "28px"
-  4xl: "32px"
-  5xl: "40px"
-  6xl: "48px"
+  xl: "24px"
+  2xl: "32px"
+  3xl: "48px"
 ```
 
 ### Border Radius
@@ -270,7 +266,7 @@ step-block:
 
 ```yaml
 section:
-  # Чередование: белый и серый фон
+  # Чередование: background (#F9F7F5) и surface (#E9E3DD)
   background-white: "{colors.background}"
   background-gray: "{colors.surface}"
   borderColor: "{colors.border}"
@@ -285,24 +281,24 @@ section:
 
 | # | Блок | Фон | Содержимое |
 |---|------|-----|------------|
-| 1 | Hero | White | h1 + subtitle + meta-tags + CTA |
-| 2 | Для кого | Gray | h2 + 3 карточки + CTA |
-| 3 | Фотокнига | White | h2 + описание + 3 spec-блока + CTA |
-| 4 | Виды фото | Gray | h2 + 3 карточки + CTA |
-| 5 | Процесс | White | h2 + meta-tag + 3 step-блока + CTA |
-| 6 | Безопасность | Gray | h2 + subtitle + буллеты + CTA |
-| 7 | Пакеты | White | h2 + subtitle + 3 карточки пакетов |
-| 8 | Доверие | White | h2 + subtitle + 3 stat + отзывы + CTA |
-| 9 | FAQ | Gray | h2 + список вопросов + CTA |
-| 10 | Форма | White | h2 + subtitle + поля формы + consent |
+| 1 | Hero | background (#F9F7F5) | h1 + subtitle + meta-tags + CTA |
+| 2 | Для кого | surface (#E9E3DD) | h2 + 3 карточки + CTA |
+| 3 | Фотокнига | background (#F9F7F5) | h2 + описание + 3 spec-блока + CTA |
+| 4 | Виды фото | surface (#E9E3DD) | h2 + 3 карточки + CTA |
+| 5 | Процесс | background (#F9F7F5) | h2 + meta-tag + 3 step-блока + CTA |
+| 6 | Безопасность | surface (#E9E3DD) | h2 + subtitle + буллеты + CTA |
+| 7 | Пакеты | background (#F9F7F5) | h2 + subtitle + 3 карточки пакетов |
+| 8 | Доверие | background (#F9F7F5) | h2 + subtitle + 3 stat + отзывы + CTA |
+| 9 | FAQ | surface (#E9E3DD) | h2 + список вопросов + CTA |
+| 10 | Форма | background (#F9F7F5) | h2 + subtitle + поля формы + consent |
 
 ### Hero Section
 
-- Anton h1, 64px, lineHeight 0.95
-- Inter subtitle, 18px, цвет text-secondary
-- Meta-tags: IBM Plex Mono, 12px, цвет text-tertiary, формат `[VALUE / VALUE]`
+- Poppins h1, 64px, fontWeight 700, lineHeight 1.05
+- Poppins subtitle, 18px, цвет text-secondary
+- Meta-tags: JetBrains Mono, 12px, цвет text-tertiary, формат `[VALUE / VALUE]`
 - CTA: кнопка primary
-- Технический оверлей: SVG-линия, opacity 0.25, цвет primary
+- Фон: background (#F9F7F5)
 
 ### Card Grid
 
@@ -312,7 +308,7 @@ section:
 
 ### Meta Labels
 
-- IBM Plex Mono, 12px, цвет text-tertiary
+- JetBrains Mono, 12px, цвет text-tertiary
 - Формат: `[KEYWORD / KEYWORD]` или `[METADATA / VALUE]`
 
 ## Interaction States

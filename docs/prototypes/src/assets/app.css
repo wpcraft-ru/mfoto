@@ -1,31 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap");
 
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Anton", Impact, sans-serif;
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-mono: "IBM Plex Mono", "Geist Mono", monospace;
+  --font-display: "Poppins", sans-serif;
+  --font-sans: "Poppins", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 }
 
 @plugin "daisyui";
 
-/* Design system: override DaisyUI theme tokens */
+/* Design system: Cafe color palette */
 :root {
-  --color-primary: oklch(73.23% 0.278 334.32);
+  /* primary: #5D4432 warm brown */
+  --color-primary: oklch(35% 0.06 47);
   --color-primary-content: oklch(100% 0 0);
-  --color-base-100: oklch(100% 0 0);
-  --color-base-200: oklch(96.1% 0.003 264.5);
-  --color-base-300: oklch(90% 0.003 264.5);
-  --color-base-content: oklch(14.5% 0.002 286.4);
+  /* base-100: #F9F7F5 warm off-white */
+  --color-base-100: oklch(97.5% 0.004 80);
+  /* base-200: #E9E3DD warm beige */
+  --color-base-200: oklch(90% 0.012 65);
+  --color-base-300: oklch(84% 0.018 60);
+  /* base-content: #3E2B1E dark brown */
+  --color-base-content: oklch(22% 0.05 47);
   --radius-btn: 0;
   --radius-box: 0;
   --radius-badge: 0;
   --radius-field: 0;
 }
 
-/* Focus visible: pink outline */
+/* Focus visible: warm brown outline */
 *:focus-visible {
-  outline: 2px solid oklch(73.23% 0.278 334.32);
+  outline: 2px solid oklch(35% 0.06 47);
   outline-offset: 2px;
 }

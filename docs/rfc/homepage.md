@@ -202,10 +202,9 @@ CTA:
 ## 5. Визуальные и UX-правила
 
 Обязательно следуем DESIGN.md:
-- чёрный бордер 1px
-- без скруглений у базовых карточек и кнопок
-- чередование фонов секций: #FFFFFF и #F3F4F6
-- шрифты: Anton (heading), Inter (body), IBM Plex Mono (meta)
+- тёплый коричневый бордер 1px (#5D4432)
+- чередование фонов секций: background (#F9F7F5) и surface (#E9E3DD)
+- шрифты: Poppins (heading и body), JetBrains Mono (meta)
 
 Интерактивные состояния для всех CTA, ссылок, полей:
 - default
